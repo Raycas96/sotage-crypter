@@ -1,20 +1,26 @@
 {
-  "name": "storage",
+  "name": "storage-crypter",
   "version": "1.0.0",
   "description": "\"Local and Session storage crypter made with crypto-js\"",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "prepare" : "npm run build",
-    "version" : "git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepare": "npm run build",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Raycas96/sotage-crypter.git"
   },
-  "keywords": ["storage","local","session","browser","web"],
+  "keywords": [
+    "storage",
+    "local",
+    "session",
+    "browser",
+    "web"
+  ],
   "author": "Raycas",
   "license": "ISC",
   "bugs": {
