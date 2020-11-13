@@ -10,11 +10,8 @@ export class StorageService {
 
     private _secretWord: string = '';
 
-    public setItem(key: string, value: string, env: 'local' | 'session' = 'session'): Promise<void> {
-        return new Promise((res, rej) => {
-            env === 'session' ? sessionStorage.setItem(crypto.MD5(key).toString(), crypto.Rabbit.encrypt(value, this._secretWord, undefined).toString()) : localStorage.setItem(crypto.MD5(key).toString(), crypto.Rabbit.encrypt(value, this._secretWord, undefined).toString());
-            res();
-        });
+    public setItem(key: string, value: string, env: 'local' | 'session' = 'session'): void {
+        env === 'session' ? sessionStorage.setItem(crypto.MD5(key).toString(), crypto.Rabbit.encrypt(value, this._secretWord, undefined).toString()) : localStorage.setItem(crypto.MD5(key).toString(), crypto.Rabbit.encrypt(value, this._secretWord, undefined).toString());
     }
 
     public getItem(key: string, env: 'local' | 'session' = 'session'): string {
