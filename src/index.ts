@@ -1,6 +1,6 @@
 import * as crypto from 'crypto-js';
 
-export class StorageService {
+export class StorageCrypter {
     //
     /// private
     //

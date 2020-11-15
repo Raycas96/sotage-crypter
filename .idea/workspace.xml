@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="529a9395-0142-4e1b-aa8e-617cf7f8bd65" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/storage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/storage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
@@ -49,7 +48,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../prova-crypter" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\Petriccione\Desktop\storage\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -63,6 +62,8 @@
       <option name="presentableId" value="Default" />
       <updated>1605211709676</updated>
       <workItem from="1605211710810" duration="4865000" />
+      <workItem from="1605272503412" duration="2416000" />
+      <workItem from="1605461441859" duration="919000" />
     </task>
     <servers />
   </component>
@@ -79,5 +80,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="462" y="118" key="FileChooserDialogImpl" timestamp="1605461257831">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1605461257831" />
   </component>
 </project>
