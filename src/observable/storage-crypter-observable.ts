@@ -1,4 +1,4 @@
-import {StorageCrypter} from '../storage-crypter';
+import {StorageCrypter} from '../storage-crypter/storage-crypter';
 import {Subject} from 'rxjs';
 
 export class StorageCrypterObservable extends StorageCrypter {
