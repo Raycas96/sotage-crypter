@@ -1,2 +1,2 @@
 export {StorageCrypter} from './storage-crypter';
-export {StorageCrypterObservable} from './observable';
+export {StorageCrypterObservable} from './observable'
