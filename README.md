@@ -13,10 +13,10 @@ npm i storage-crypter
 ## Usage
 
 ```javascript
-import {Index} from 'storage-crypter';
+import {StorageCrypter} from 'storage-crypter';
 /** Initialize the class with your secret key */
 const secretKey = 'abc';
-const store = new Index(secretKey);
+const store = new StorageCrypter(secretKey);
 
 /** This will set the pair key value inside the Session storage */
 store.setItem(key, value);
@@ -41,8 +41,9 @@ store.getItem(key, 'local');
 ## Usage with rxjs
 You can also use this package with rxjs and and listen on every Local and Session Storage change
 ```javascript
+import {StorageCrypterObservable} from 'storage-crypter'
 const secretKey = 'abc';
-const storeObs = new Index(secretKey);
+const storeObs = new StorageCrypterObservable(secretKey);
   
 /** Everytime you consider setItems or removeitems you’ll emit an object,which is made like this {opt: 'set' | 'remove' } */
 storeObs.storageSubject.subscribe(res => {
