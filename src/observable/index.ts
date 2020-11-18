@@ -1,7 +1,7 @@
-import {Index} from '../storage-crypter';
+import {StorageCrypter} from '../storage-crypter';
 import {Subject} from 'rxjs';
 
-export class StorageCrypterObservable extends Index {
+export class StorageCrypterObservable extends StorageCrypter {
 
     constructor(secretWord: string) {
         super(secretWord);
