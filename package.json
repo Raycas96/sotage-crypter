@@ -27,7 +27,7 @@
     "url": "https://github.com/Raycas96/storage-crypter/issues"
   },
   "files": [
-    "lib"
+    "lib/**/*"
   ],
   "homepage": "https://github.com/Raycas96/storage-crypter#readme",
   "devDependencies": {
