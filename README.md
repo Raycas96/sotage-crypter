@@ -45,7 +45,10 @@ import {StorageCrypterObservable} from 'storage-crypter'
 const secretKey = 'abc';
 const storeObs = new StorageCrypterObservable(secretKey);
   
-/** Everytime you consider setItems or removeitems you’ll emit an object,which is made like this {opt: 'set' | 'remove' } */
+/** Everytime you consider setItems or removeitems you’ll emit an object,which is made like this {  opt: 'set' | 'remove',
+                                                                                                      oldValue?: string,
+                                                                                                      newValue?: string,
+                                                                                                      key?: string } */
 storeObs.storageSubject.subscribe(res => {
   console.log(res);
 });
