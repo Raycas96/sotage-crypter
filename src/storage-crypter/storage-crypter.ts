@@ -1,4 +1,5 @@
 import * as crypto from 'crypto-js';
+import {SetItem} from '../interfaces/set-item';
 
 export class StorageCrypter {
     //
@@ -31,5 +32,20 @@ export class StorageCrypter {
     public removeItem(key: string, env: 'local' | 'session' = 'session'): void {
         const keyEnc = crypto.MD5(key).toString();
         env === 'local' ? localStorage.removeItem(keyEnc) : sessionStorage.removeItem(keyEnc);
+    }
+
+    /** Foreach triplet key - value - opt if the opt is set it will set the pair key - value inside the local o session storage  */
+    /** else if the opt is remove it will remove the items from local or session storage */
+    public gestItems(tripletList: SetItem[]): void {
+        tripletList.forEach(triplet => {
+            switch (triplet.opt) {
+                case 'set':
+                    this.setItem(triplet.key, triplet.value || '', triplet.env ? triplet.env : 'session');
+                    break;
+                case 'remove':
+                    this.removeItem(triplet.key, triplet.env ? triplet.env : 'session');
+                    break;
+            }
+        });
     }
 }
