@@ -1,6 +1,6 @@
 {
   "name": "storage-crypter",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "\"Local and Session storage crypter made with crypto-js\"",
   "main": "lib/index.js",
   "scripts": {
@@ -44,8 +44,7 @@
   },
   "dependencies": {
     "@types/crypto-js": "^4.0.1",
-    "crypto-es": "^1.2.7",
-    "crypto-js": "^4.0.0"
+    "crypto-es": "^1.2.7"
   },
   "browser": {
     "crypto": false
