@@ -21,7 +21,8 @@ Allow you to get the value associated at the given key  (the default value of th
 Allow you to remove the pair key value associated at the given key from the storage  (the default value of the storage is session but you can change it to local)
 
 `getItem(key,storage = 'session')`
-#Examples 🔭
+
+# Examples 🔭
 
 ```javascript
 import {StorageCrypter} from 'storage-crypter';
