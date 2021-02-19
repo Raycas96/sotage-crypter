@@ -1,6 +1,6 @@
 # Storage-Crypter  🌱
 Storage-Crypter is a light and simple library made with [crypto-es](https://www.npmjs.com/package/crypto-es) that allow you to encrypt and decrypt the values present in your Local or Session Storage
-##Install
+## Install
 You can install it through the npm packet manager typing `npm i storage-crypter`
 
 ## Usage 
