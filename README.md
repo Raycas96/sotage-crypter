@@ -13,12 +13,12 @@ It Allows you to set the pair key value inside the store (the default value of t
 `setItem(key,value, storage = 'session')`
 
 ### Get Item ⚡
-Allow you to get the value associated at the given key  (the default value of the storage is session but you can change it to local) if empty it will return an empty string
+It Allows you to get the value associated at the given key  (the default value of the storage is session but you can change it to local) if empty it will return an empty string
 
 `getItem(key,storage = 'session')`
 
 ### Remove  Item ⚡
-Allow you to remove the pair key value associated at the given key from the storage  (the default value of the storage is session but you can change it to local)
+It Allows you to remove the pair key value associated at the given key from the storage  (the default value of the storage is session but you can change it to local)
 
 `getItem(key,storage = 'session')`
 
