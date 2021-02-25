@@ -21,7 +21,10 @@
     "browser",
     "web",
     "crypt",
-    "security"
+    "crypto",
+    "security",
+    "typescript",
+    "javascript"
   ],
   "author": "Raycas",
   "license": "ISC",
