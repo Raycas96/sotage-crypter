@@ -20,19 +20,28 @@ It Allows you to get the value associated at the given key  (the default value o
 ### Remove  Item ⚡
 It Allows you to remove the pair key value associated at the given key from the storage  (the default value of the storage is session but you can change it to local)
 
-`getItem(key,storage = 'session')`
+`removeItem(key,storage = 'session')`
+
+### Switch  Items ⚡
+It Allows you to switch the pair key value associated at the given key from/to local/session Storage (if the operation is successful return true else false)
+
+`switchFromLocal(key)`
+`switchFromSession(key)`
 
 # Examples 🔭
 
 ```javascript
 import {StorageCrypter} from 'storage-crypter';
+/** Initialize the class with your secret key */
 const storageCrypter = new StorageCrypter('Secret');
 /** local storage */
 const set = () => storageCrypter.setItem('example', 'value', 'local');
 const remove = () => storageCrypter.removeItem('example', 'local');
 const get = () => console.log(storageCrypter.getItem('example', 'local'));
+storageCrypter.switchFromLocal('example');
 /** session storage */
 const set = () => storageCrypter.setItem('example', 'value',);
 const remove = () => storageCrypter.removeItem('example');
 const get = () => console.log(storageCrypter.getItem('example'));
+storageCrypter.switchFromSession('example');
 ```

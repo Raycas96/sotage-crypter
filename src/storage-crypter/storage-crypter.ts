@@ -8,7 +8,7 @@ export class StorageCrypter {
         this._secretWord = secretWord
     }
 
-    private _secretWord: string = '';
+    private _secretWord: string = ''
 
     /** This will set the pair key value inside the Session storage */
     public setItem (key: string, value: string, env: 'local' | 'session' = 'session'): void {
@@ -31,5 +31,29 @@ export class StorageCrypter {
     public removeItem (key: string, env: 'local' | 'session' = 'session'): void {
         const keyEnc = crypto.default.MD5(key).toString()
         env === 'local' ? localStorage.removeItem(keyEnc) : sessionStorage.removeItem(keyEnc)
+    }
+
+    /** This will switch selected item from local to session storage */
+    public switchFromLocal (key: string): boolean {
+        const value = this.getItem(key, 'local')
+        if (value) {
+            this.setItem(key, value)
+            this.removeItem(key, 'local')
+            return true
+        } else {
+            return false
+        }
+    }
+
+    /** This will switch selected item from session to local storage */
+    public switchFromSession (key: string): boolean {
+        const value = this.getItem(key)
+        if (value) {
+            this.setItem(key, value, 'local')
+            this.removeItem(key)
+            return true
+        } else {
+            return false
+        }
     }
 }
