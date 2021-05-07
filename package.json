@@ -1,8 +1,9 @@
 {
     "name": "storage-crypter",
-    "version": "2.3.0",
+    "version": "2.3.1",
     "description": "\"Local and Session storage crypter made with crypto-js\"",
     "main": "lib/index.js",
+    "typings": "lib/index.d.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
