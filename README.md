@@ -53,7 +53,7 @@ const get = () => console.log(storageCrypter.getItem('example'));
 storageCrypter.switchFromSession('example');
 ```
 
-# Demos 🔭
+# Demo 🔭
 
 ## Angular
 
