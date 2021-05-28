@@ -1,6 +1,6 @@
 {
     "name": "storage-crypter",
-    "version": "2.3.2",
+    "version": "2.3.3",
     "description": "\"Local and Session storage crypter made with crypto-js\"",
     "main": "lib/index.js",
     "typings": "lib/index.d.ts",
