@@ -2,6 +2,9 @@ import * as crypto from 'crypto-es';
 import { Env } from './types';
 
 export const storageCrypter = (secret: string) => {
+    if(!secret) {
+        throw  new Error('Secret is required');
+    }
     /** This will set the pair key value inside the Session storage */
     const setItem = (key: string, value: string, env: Env = 'session'): void => {
         if (env === 'session') {
@@ -72,7 +75,6 @@ export const storageCrypter = (secret: string) => {
         }
 
         const keys = Object.keys(localStorage);
-        console.log('keys', keys)
         keys.forEach((key) => localStorage.removeItem(key));
     };
 
