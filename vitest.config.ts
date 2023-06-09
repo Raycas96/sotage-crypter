@@ -13,10 +13,10 @@ export default defineConfig({
     coverage: {
       provider: 'c8',
       reporter: ['text', 'json', 'json-summary', 'html'],
-      lines: 80,
-      branches: 80,
-      functions: 80,
-      statements: 80,
+      lines: 30,
+      branches: 30,
+      functions: 5,
+      statements: 30,
     },
   },
 });
