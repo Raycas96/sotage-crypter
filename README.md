@@ -55,9 +55,9 @@ switchFromSession(key);
 # Examples 🔭
 
 ```javascript
-import { StorageCrypter } from 'storage-crypter';
+import { storageCrypter } from '@raycas/storage-crypter';
 /** Initialize the class with your secret key */
-const storageCrypter = new StorageCrypter('Secret');
+const {setItem, getItem, removeItem} =  storageCrypter('Secret');
 /** local storage */
 const set = () => storageCrypter.setItem('example', 'value', 'local');
 const remove = () => storageCrypter.removeItem('example', 'local');
@@ -74,8 +74,8 @@ storageCrypter.switchFromSession('example');
 
 ## Angular
 
-[Stackblitz](https://stackblitz.com/edit/angular-storage-crypter?file=src/app/app.component.html)
+[Demo](https://codesandbox.io/s/angular-11-playground-forked-kqg4hr?file=/src/app/app.component.html)
 
 ## React
 
-[Stackblitz](https://stackblitz.com/edit/react-storage-crypter?file=index.tsx)
+[Demo](https://codesandbox.io/p/sandbox/crazy-zhukovsky-pqnx5c)
