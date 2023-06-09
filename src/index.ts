@@ -1,8 +1,7 @@
-import { add, subtract } from './math';
+import { storageCrypter } from './storage-crypter';
 
-export { add, subtract };
+export { storageCrypter };
 
 export default {
-  add,
-  subtract,
+  storageCrypter,
 };

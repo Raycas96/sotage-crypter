@@ -1,22 +1,29 @@
 {
-  "name": "@akashrajpurohit/ts-npm-template",
+  "name": "@raycas/storage-crypter",
   "version": "0.0.0-development",
-  "description": "A project template to bootstrap NPM package with Typescript",
+  "description": "\"Local and Session storage crypter made with crypto-js\"",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AkashRajpurohit/ts-npm-template.git"
+    "url": "git+https://github.com/Raycas96/storage-crypter.git"
   },
-  "homepage": "https://github.com/AkashRajpurohit/ts-npm-template",
-  "bugs": "https://github.com/AkashRajpurohit/ts-npm-template/issues",
+  "homepage": "https://github.com/Raycas96/storage-crypter",
+  "bugs": "https://github.com/Raycas96/storage-crypter/issues",
   "author": {
-    "name": "AkashRajpurohit",
-    "email": "me@akashrajpurohit.com",
-    "url": "https://akashrajpurohit.com"
+    "name": "raycas",
+    "email": "giuseppe.petriccione1996@gmail.com",
+    "url": "https://dev.raycas.it"
   },
   "keywords": [
-    "typescript-template",
-    "npm-boilerplate",
-    "semantic-release-boilerplate"
+    "storage",
+    "local",
+    "session",
+    "browser",
+    "web",
+    "crypt",
+    "crypto",
+    "security",
+    "typescript",
+    "javascript"
   ],
   "license": "MIT",
   "main": "./dist/index.js",
@@ -40,6 +47,7 @@
   ],
   "scripts": {
     "build": "tsup",
+    "build:prod": "NODE_ENV=production tsup",
     "dev": "tsup --watch",
     "format": "prettier --write .",
     "test": "vitest run",
@@ -108,5 +116,8 @@
       "@semantic-release/npm",
       "@semantic-release/github"
     ]
+  },
+  "dependencies": {
+    "crypto-es": "^1.2.7"
   }
 }
