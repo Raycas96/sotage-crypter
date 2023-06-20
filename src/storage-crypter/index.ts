@@ -1,6 +1,6 @@
-import * as crypto from 'crypto-es';
+import {  } from 'crypto-es/lib/index';
 import { Env } from './types';
-
+MD5.
 export const storageCrypter = (secret: string) => {
     if(!secret) {
         throw  new Error('Secret is required');

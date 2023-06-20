@@ -1,6 +1,6 @@
 # Storage-Crypter 🚀
 
-[![Language: TypeScript](https://img.shields.io/badge/language-typescript-blue.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/) ![Version](https://img.shields.io/badge/version-v.2.3.3-brightgreen) [![NPM](https://img.shields.io/badge/npm-v.2.3.3-red?logo=npm)](https://www.npmjs.com/package/storage-crypter)
+[![Language: TypeScript](https://img.shields.io/badge/language-typescript-blue.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/) ![Version](https://img.shields.io/badge/version-v.0.0.1-brightgreen)
 
 Storage-Crypter is a light and simple library made with [crypto-es](https://www.npmjs.com/package/crypto-es) that allow you to encrypt and decrypt the values present in your Local or Session Storage
 
